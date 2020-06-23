@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style media="screen">
+      body{        font-size : 200%;        font-family:arial;        margin: 0px;      }
+      h1{        margin-top: 160px;        color: blue;      }
+      pre{        overflow-x: scroll;     background-color: #222;  padding: 30px;  border: 0px; border-radius: 10px;}
+      table{
+        overflow: auto;
+      }
+      hr{        margin-top: 250px;        margin-bottom: 100px;        height:5px;        background-color:blue;      }
+      h2{        color:green;        margin-top: 80px;      }
+      h3{        color:red;      }
+      li,dd,dt{        margin-top: 20px;      }
+    </style>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body bgcolor="#213" text="#fff">
+<div class="doc">
+  <center>
+  <h1>welcome friends</h1>
+  <p>Hello kids welcome to learn with PNC javascript lessons</p>
+</center>
+  <h2>JavaScript</h2>
+  <ul>
+    <li><b>Client side Scripting language</b></li>
+    <ul>
+      <li>Executed in browsers (Client)</li><li>Lite weight</li><li>Reduces network traffic</li>
+    </ul>
+    <li><b>Most Populer</b></li>
+    <li><b>Helps to build interactive web pages</b></li>
+    <li><b>Used in both static and dynamic web pages</b></li>
+  </ul>
+
+  <hr>
+
+  <h3>Getting Started</h3>
+
+  <ul>
+    <li><b>The <code>SCRIPT</code> tag</b></li>
+    <ul>
+      <li>It is a container tag</li>
+      <li>attribute : <code>language</code></li>
+      <ul>
+        <li>specifies the scripting language; JavaScript</li>
+        <li>Now this attribute is optional since JS is the default value in modern browsers</li>
+      </ul>
+    </ul>
+    <li><b>Keywords are in lower case in javaScript</b></li>
+    <li><b>Built in functions are in camelCase in javaScript</b></li>
+    <li><b>Ways to add in an HTML document</b></li>
+    <ul>
+      <li>Internal Ways</li>
+      <ul>
+        <li>Inside head</li>
+        <li>Inside body</li>
+      </ul>
+      <li>External file</li>
+      <ul>
+        <li>The JavaScript file is saved with .js extension</li>
+        <li>This document is included using <code>SCRIPT</code> tag inside the head section</li>
+        <li>In it the <code>SCRIPT</code> tag we specify the path to the .js file using the attribute <code>
+        src </code> </li>
+      </ul>
+    </ul>
+
+  </ul>
+
+<hr>
+<h3>Functions in JavaScript</h3>
+  <ul>
+    <li>Functions are created using the keyword <code>functions</code> </li>
+    <li>syntax : <pre>function functionName(paramater list)
+      {
+      function definition
+      }</pre> </li>
+      <li>Function must be called for exicution after defining</li>
+      <li>It is always better to define the function inside the head section</li>
+      <li> <b>Built in functions</b>
+        <ul>
+          <li>Built in function are predefined functions in the javascript </li>
+          <li>To use such functions we just need to call them when needed</li>
+          <li> Let's get femilier with some of them
+            <dl class="Datalist">
+              <dt> <code> alert()</code> </dt>
+              <dd>It displays an messege on to the screen syntax <pre>alert(messege)</pre> eg : <pre>alert("Hello World")</pre>  </dd>
+              <dt> <code>isNaN()</code> </dt>
+              <dd>
+                <ul>
+                  <li>This function is used to check wheather a value is a number or not</li>
+                  <li>NaN stands for Not a Number</li>
+                  <li>So the function retures <code>true </code> if the value is not a number</li>
+                  <li>syntax :<pre>isNaN(value)</pre>eg : <pre>isNaN("Hello 123")
+                  isNaN(1223)</pre> </li>
+                </ul>
+              </dd>
+              <dt> <code>toUpperCase()</code> </dt>
+              <dd>
+                <ul>
+                  <li>It simply converts a given string into upper case</li>
+                  <li>syntax :<pre>stringVariable.toUpperCase();</pre> </li>
+                  <li>The result must be stored into another variable or accessed</li>
+                  <li>eg : <pre>var capitalstring,lowerstring;
+                    lowerstring="hello world"
+                    capitalstring=lowerstring.toUpperCase()</pre> </li>
+                </ul>
+              </dd>
+              <dt> <code>toLowerCase()</code> </dt>
+              <dd>
+                <ul>
+                  <li>It simply converts a given string into lower case</li>
+                  <li>syntax :<pre>stringVariable.toLowerCase();</pre> </li>
+                  <li>The result must be stored into another variable or accessed</li>
+                  <li>eg : <pre>var capitalstring,lowerstring;
+                    capitalstring="HELLO WORLD"
+                    lowerstring=capitalstring.toLowerCase()</pre> </li>
+                </ul>
+              </dd>
+              <dt> <code>charAt()</code> </dt>
+              <dd>
+                <ul>
+                  <li>It returnes a charecter at a specific position in a string</li>
+                  <li>syntax  : <pre>stringVariable.charAt()</pre> </li>
+                  <li>eg :
+                  <pre>  var str1,str2;
+                    str1="Hello World";
+                    str2=str1.charAt(6);</pre>
+                  </li>
+                </ul>
+               </dd>
+            </dl>
+          </li>
+        </ul>
+      </li>
+  </ul>
+
+  <hr>
+
+  <h3>Datatypes in JavaScript</h3>
+  <ul>
+    <li> <b>Number</b>
+      <ul>
+        <li>It includes all real numbers; positive, negative and decimal numbers. </li>
+        <li>Eg : 234, -673, 97.532, -765.232</li>
+      </ul>
+   </li>
+   <li> <b>String</b> </li>
+   <ul>
+     <li>Contains any combination of charecters, numbers etc.</li> <li>Encloused within double quotes.</li>
+     <li>Eg : "Hello WORLD", "123.67", "Dream123", "1!@@#$"</li>
+   </ul>
+   <li> <b>Boolean</b>
+     <ul>
+       <li>It holds only two values, true or false</li>
+     </ul>
+   </li>
+   <li> <b>Variables</b>
+     <ul>
+       <li>Variables are declared using the keyword <pre>var</pre> </li>
+       <li>syntax : <pre>var variableName </pre> </li>
+       <li>var is used to define all type of variables</li>
+       <li>variables holdes values of any above Datatypes</li>
+       <li>The keyword <pre>typeof()</pre> is used to find the datatype of any vsariable <br> syntax : <pre>typeof(variableName)</pre> </li>
+     </ul>
+   </li>
+  </ul>
+
+  <hr>
+
+  <h3>Operators in JavaScript</h3>
+  <ul>
+    <li>Arithmetic Operators
+      <ul>
+        <table margin="3px" border="1px" bgcolor="#123" cellpadding="5px" >
+          <tr><th>Operator</th><th>Description</th><th>Example</th><th>y</th><th>x</th></tr>
+            <tr><td>+</td><td>adding two numbers</td><td>x=y+10</td><td>15</td><td>25</td></tr>
+            <tr><td>-</td><td>subtraction of two numbers</td><td></td><td></td><td></td></tr>
+            <tr><td>*</td><td>multiplication of two numbers</td><td></td><td></td><td></td></tr>
+            <tr><td>/</td><td>division of two numbers</td><td></td><td></td><td></td></tr>
+            <tr><td>%</td><td>modulus of two numbers</td><td></td><td></td><td></td></tr>
+            <tr><td>++</td><td>incrementing a number</td><td></td><td></td><td></td></tr>
+            <tr><td>--</td><td>decrementing a number</td><td></td><td></td><td></td></tr>
+        </table>
+    </li>
+    <li>Assignment Operators
+      <table margin="3px" border="1px" bgcolor="#123" cellpadding="5px">
+        <caption>Assume that value of a is 10 and b is 3 </caption>
+        <tr>
+          <th>Operator</th><th>Description</th><th>Example</th><th>a</th></tr>
+          <tr><td>=</td><td>Assignment</td><td>a = b</td><td>3</td></tr>
+          <tr><td>+=</td><td>Add and assignment</td><td>a += b</td><td>13</td></tr>
+          <tr><td>-=</td><td>Subtract and assignment</td><td>a -= b</td><td>7</td></tr>
+          <tr><td>*=</td><td>Multiply and assignment</td><td>a *= b</td><td>30</td></tr>
+          <tr><td>/=</td><td>Divide and assignment</td><td>a /= b</td><td>3.333</td></tr>
+          <tr><td>%=</td><td>Modulus and assignment</td><td>a %= b</td><td>1</td></tr>
+      </table>
+    </li>
+    <li>Relational Operators
+      <table margin="3px" border="1px" bgcolor="#123" cellpadding="5px">
+        <caption>Assume that value of a is 10 and b is 3 </caption>
+        <tr><th>Operator</th><th>Description</th><th>Example</th><th>Result</th></tr>
+        <tr><td>==</td> <td>Equal to</td><td>a==b</td><td>false</td> </tr>
+        <tr><td>!=</td> <td>Not equal to</td><td>a!=b</td><td>true</td> </tr>
+        <tr><td><</td> <td>Less than</td><td> a < b </td><td>false</td> </tr>
+        <tr><td><=</td> <td>Less than or equal to</td><td>a<=b</td><td>false</td> </tr>
+        <tr><td>></td> <td>Greater than</td><td>a>b</td><td>true</td> </tr>
+        <tr><td>>=</td> <td>Greater than or equal to</td><td>a>=b</td><td>true</td> </tr>
+      </table>
+    </li>
+    <li>Logical Operators
+      <table margin="3px" border="1px" bgcolor="#123" cellpadding="5px">
+        <caption>Assume that value of a is true and b is false </caption>
+        <tr><th>Operator</th><th>Description</th><th>Example</th><th>Result</th></tr>
+        <tr><td>&&</td><td>AND</td><td>a && b</td><td>false</td></tr>
+        <tr><td>||</td><td>OR</td><td>a||b</td><td>true</td></tr>
+        <tr><td>!</td><td>NOT</td><td>!a</td><td>false</td></tr>
+      </table>
+    </li>
+    <li>String Operator
+      <ul>
+        <li>The + Operator is also used to concatenating two strings</li>
+        <li>We can use it just like adding two numbers</li>
+        <li>eg : <pre>
+          var str1,str2;
+          str1="Hello "
+          str2="Welome"
+          str=str1+str2
+        </pre> </li>
+        <li>How ever if we try to add a number and a string the number will be typecated into a string type</li>
+      </ul>
+
+    </li>
+  </ul>
+  <hr>
+  <h3>Control Structures in JavaScript</h3>
+  <ul>
+    <li>Control Structures are used to change the sequential flow of an program</li>
+    <li>All control Structures in C++ can be used in javaScript</li>
+    <li>Control Structures <dl class="Datalist">
+      <dt><code>if()</code> </dt>
+      <dd>
+        <ul>
+          <li>  Used to exicute statments based on some condition </li>
+            <li>syntax : <pre>if (test_expression){
+              statments.
+            }</pre></li>
+            <li>We can use <code>else</code> block when test condition fails </li>
+            <li>syntax : <pre>if (test_expression){
+              statments
+            }
+            else{
+              statments
+            }
+          </pre> </li>
+          <li>Just like in C++ we can use <code>else-if</code> ladder</li>
+        </ul>
+      </dd>
+      <dt><code>switch()</code> </dt>
+      <dd><ul>
+        <li>It is a multibranching statment</li>
+        <li>Here program codes can be selected for execution based on the value of an expression.</li>
+        <li>syntax : <pre>
+          switch(expression)|{
+            case value : statments
+                        break;
+              .................
+            default : statments
+          }
+        </pre> </li>
+        <li>We can give any number of <code>case</code> </li>
+        <li>When value do not match with any <pre>case</pre> statments in the <pre>default</pre> is exicuted </li>
+      </ul> </dd>
+      <dt><code>for()</code> loop</dt>
+      <dd><ul>
+        <li>It is used to exicute a some statments repatedly</li>
+        <li>We will use a loop control variable to set number of execution</li>
+        <li>syntax  : <pre>
+          for(initialization; test expression; update statments){
+            statments
+          }
+        </pre>
+        </li>
+      </ul> </dd>
+      <dt><code>while </code>loop </dt>
+      <dd>
+        <ul>
+          <li>It is used to exicute a some statments repatedly based on test conditions</li>
+          <li>statments inside the loop body will be exicuted as long as the condition remains true</li>
+          <li>syntax : <pre>
+            while(test_expression){
+              statments
+            }
+          </pre>
+          </li>
+        </ul>
+      </dd>
+    </dl> </li>
+
+  </ul>
+  <hr>
+
+  <h3>Accessing Values</h3>
+  <ul>
+    <li>We will give a unique name to the form and each input field in the HTML document.</li>
+    <li>This names are used to access values in those input fields.</li>
+    <li>keyword : <code>document</code> and <code>value</code> </li><li>syntax :<pre>
+      document.formName.fieldName.value;
+    </pre> </li>
+    <li>We can assign value to a input field in the similar way</li>
+    <li>By default content in the textboxes are strings</li>
+  </ul>
+    <hr>
+    <h3>Event Listeners</h3>
+    <ul>
+      <li>We can tell the browsers when a javaScript function should be exicuted</li>
+      <li>It is done using the event Listeners</li>
+      <li>Common event listeners
+        <dl>
+          <dt><code>onClick</code> </dt>
+          <dd>Occures when a user <i>clicks</i> an object in webpage</dd>
+          <dt><code>onMouseEnter</code> </dt>
+          <dd>Occures when mouse pointer is <i>moved onto</i> an object</dd>
+          <dt><code>onMouseLeave</code> </dt>
+          <dd>Occures when mouse pointer is<i> moved out of</i> an object</dd>
+          <dt><code>onKeyDown</code> </dt>
+          <dd>Occures when user is<i> pressing a key </i>in the keyboard</dd>
+          <dt><code>onKeyUp</code> </dt>
+          <dd>Occures when user is<i>releasing a key</i> in the keyboard</dd>
+        </dl>
+       </li>
+    </ul>
+
+    <hr>
+
+      <h3>Let's have some coding challenges</h3>
+
+    </div>
+  </body>
+</html>
