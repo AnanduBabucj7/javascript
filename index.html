@@ -3,19 +3,18 @@
   <head>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <style media="screen">
-      body{        font-size : 100%;        font-family:arial;        margin: 0px;      }
+      body{        font-size : 120%;  padding: 20px;     font-family:arial;        margin: 0px;      }
       h1{        margin-top: 160px;        color: blue;      }
-      pre{        overflow-x: scroll;     background-color: #222;  padding: 30px;  border: 0px; border-radius: 10px;}
-      table{
-        overflow: auto;
-      }
+      pre{        overflow-x: scroll;     background-color: #222;  padding: 30px;  border: 0px; border-radius: 10px;  }
+      table{        overflow: auto;      }
       hr{        margin-top: 250px;        margin-bottom: 100px;        height:5px;        background-color:blue;      }
       h2{        color:green;        margin-top: 80px;      }
       h3{        color:red;      }
       li,dd,dt{        margin-top: 20px;      }
+      span{        font-size: 100%;  font-family: monospace;       }
     </style>
     <meta charset="utf-8">
-    <title></title>
+    <title>JavaScript tutorials by Anandu Babu</title>
   </head>
   <body bgcolor="#213" text="#fff">
 <div class="doc">
@@ -27,7 +26,9 @@
   <ul>
     <li><b>Client side Scripting language</b></li>
     <ul>
-      <li>Executed in browsers (Client)</li><li>Lite weight</li><li>Reduces network traffic</li>
+      <li>Executed in browsers (Client)</li>
+      <li>Lite weight</li>
+      <li>Reduces network traffic</li>
     </ul>
     <li><b>Most Populer</b></li>
     <li><b>Helps to build interactive web pages</b></li>
@@ -92,8 +93,10 @@
                   <li>This function is used to check wheather a value is a number or not</li>
                   <li>NaN stands for Not a Number</li>
                   <li>So the function retures <code>true </code> if the value is not a number</li>
-                  <li>syntax :<pre>isNaN(value)</pre>eg : <pre>isNaN("Hello 123")
-                  isNaN(1223)</pre> </li>
+                  <li>syntax : <code> isNaN(value) </code>eg :
+                    <pre>
+      isNaN("Hello 123")
+      isNaN(1223)</pre> </li>
                 </ul>
               </dd>
               <dt> <code>toUpperCase()</code> </dt>
@@ -102,7 +105,8 @@
                   <li>It simply converts a given string into upper case</li>
                   <li>syntax :<pre>stringVariable.toUpperCase();</pre> </li>
                   <li>The result must be stored into another variable or accessed</li>
-                  <li>eg : <pre>var capitalstring,lowerstring;
+                  <li>eg : <pre>
+                    var capitalstring,lowerstring;
                     lowerstring="hello world"
                     capitalstring=lowerstring.toUpperCase()</pre> </li>
                 </ul>
@@ -113,9 +117,10 @@
                   <li>It simply converts a given string into lower case</li>
                   <li>syntax :<pre>stringVariable.toLowerCase();</pre> </li>
                   <li>The result must be stored into another variable or accessed</li>
-                  <li>eg : <pre>var capitalstring,lowerstring;
-                    capitalstring="HELLO WORLD"
-                    lowerstring=capitalstring.toLowerCase()</pre> </li>
+                  <li>eg : <pre>
+var capitalstring,lowerstring;
+capitalstring="HELLO WORLD"
+lowerstring=capitalstring.toLowerCase()</pre> </li>
                 </ul>
               </dd>
               <dt> <code>charAt()</code> </dt>
@@ -124,7 +129,8 @@
                   <li>It returnes a charecter at a specific position in a string</li>
                   <li>syntax  : <pre>stringVariable.charAt()</pre> </li>
                   <li>eg :
-                  <pre>  var str1,str2;
+                  <pre>
+                    var str1,str2;
                     str1="Hello World";
                     str2=str1.charAt(6);</pre>
                   </li>
@@ -176,12 +182,12 @@
         <table margin="3px" border="1px" bgcolor="#123" cellpadding="5px" >
           <tr><th>Operator</th><th>Description</th><th>Example</th><th>y</th><th>x</th></tr>
             <tr><td>+</td><td>adding two numbers</td><td>x=y+10</td><td>15</td><td>25</td></tr>
-            <tr><td>-</td><td>subtraction of two numbers</td><td></td><td></td><td></td></tr>
-            <tr><td>*</td><td>multiplication of two numbers</td><td></td><td></td><td></td></tr>
-            <tr><td>/</td><td>division of two numbers</td><td></td><td></td><td></td></tr>
-            <tr><td>%</td><td>modulus of two numbers</td><td></td><td></td><td></td></tr>
-            <tr><td>++</td><td>incrementing a number</td><td></td><td></td><td></td></tr>
-            <tr><td>--</td><td>decrementing a number</td><td></td><td></td><td></td></tr>
+            <tr><td>-</td><td>subtraction of two numbers</td><td>x=x-10</td><td>15</td><td>5</td></tr>
+            <tr><td>*</td><td>multiplication of two numbers</td><td>x=y*3</td><td>15</td><td>45</td></tr>
+            <tr><td>/</td><td>division of two numbers</td><td>x=y/2</td><td>15</td><td>7.5</td></tr>
+            <tr><td>%</td><td>modulus of two numbers</td><td>x=y%2</td><td>15</td><td>1</td></tr>
+            <tr><td>++</td><td>incrementing a number</td><td>x=++y<br>x=y++</td><td>15<br>15</td><td>16 <br>15 </td></tr>
+            <tr><td>--</td><td>decrementing a number</td><td>x=--y <br> x=y-- </td><td>15<br>15</td><td>14 <br> 15 </td></tr>
         </table>
     </li>
     <li>Assignment Operators
@@ -243,11 +249,13 @@
       <dd>
         <ul>
           <li>  Used to exicute statments based on some condition </li>
-            <li>syntax : <pre>if (test_expression){
+            <li>syntax : <pre>
+              if (test_expression){
               statments.
             }</pre></li>
             <li>We can use <code>else</code> block when test condition fails </li>
-            <li>syntax : <pre>if (test_expression){
+            <li>syntax : <pre>
+              if (test_expression){
               statments
             }
             else{
@@ -337,5 +345,8 @@
       <h3>Let's have some coding challenges</h3>
 
     </div>
+    <footer>
+      <span>Anandu Babu</span>
+    </footer>
   </body>
 </html>
